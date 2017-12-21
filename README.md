@@ -1,2 +1,2 @@
-# Data-Structures
-Projects completed in my Data Structures course
+# Project1
+This is the first assignment given in my Data Structures class.
