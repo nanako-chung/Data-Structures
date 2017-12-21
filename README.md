@@ -9,7 +9,7 @@
       https://joannakl.github.io/cs102_f17/hwk/project2.pdf
       https://joannakl.github.io/cs102_f17/hwk/color_list.txt
                  
-  **Project3** - Application & Implementation of Stacks & Queues
+  **Project3** - Application & Implementation of Stacks & Queues, JUnit Testing
   
       https://joannakl.github.io/cs102_f17/hwk/project3.pdf
   
