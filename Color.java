@@ -1,4 +1,4 @@
-package project1;
+package project2;
 
 /**
  * This class, which implements the Comparable interface, is responsible for creating Color objects and
@@ -180,12 +180,33 @@ public class Color implements Comparable<Color> {
 	@Override
 	public boolean equals(Object obj) {
 
-		//sets the object to Color
-		Color c = (Color)obj;
+		//checks to see if the reference of current object is the same as obj
+		if (this==obj) {
+			return true;
+		} 
+
+		//if the reference of current object and obj are not the same, check to see if obj is null
+		if (obj==null) {
+			return false;
+		} 
+
+		//checks to see if obj is an instance of the Color class (false if it is not because it cannot be equal to current Color object)
+		//and castes it into a Color object		
+		if (!(obj instanceof Color)) {
+			return false;
+		} Color other = (Color) obj;
 		
-		//if the object c is an instance of the Color class, return a boolean value that determines whether the two Color objects are equal in hex value
-		//otherwise return false
-		return this.colorHexValue.equalsIgnoreCase(c.getHexValue());
+		//if the hex value of the current Color object is null, check to see if hex value of the other Color object is NOT null
+		if (colorHexValue==null) {
+			if (other.getHexValue()!=null) {
+				return false;
+			} 
+		} 
+
+		//checks to see if hex values of each Color object are equal regardless of the alphabetical case
+		else if (!colorHexValue.equalsIgnoreCase(other.colorHexValue)) {
+			return false;
+		} return true;
 	}
 
 	/**
@@ -198,7 +219,7 @@ public class Color implements Comparable<Color> {
 
 		//if the object's color name is empty or null, do not display name; otherwise, display all of the object's information
 		if (colorName=="" || colorName==null) {
-			return (this.colorHexValue+", ("+String.format("%3d",this.red)+","+String.format("%3d",this.green)+","+String.format("%3d",this.blue)+"), ");
+			return (this.colorHexValue+", ("+String.format("%3d",this.red)+","+String.format("%3d",this.green)+","+String.format("%3d",this.blue)+")");
 		}
 		else {
 			return (this.colorHexValue+", ("+String.format("%3d",this.red)+","+String.format("%3d",this.green)+","+String.format("%3d",this.blue)+"), "+this.colorName);
