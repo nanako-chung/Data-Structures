@@ -1,7 +1,7 @@
 # Project Specifications & Respective Topics:
   **Project1** - Review of Advanced Java & OOP
   
-      <a>https://joannakl.github.io/cs102_f17/hwk/project1.pdf</a>
+      https://joannakl.github.io/cs102_f17/hwk/project1.pdf
       https://joannakl.github.io/cs102_f17/hwk/color_list.txt
                  
   **Project2** - Application of Lists & ADTs
