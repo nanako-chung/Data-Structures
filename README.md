@@ -1,5 +1,5 @@
 # Project Specifications & Respective Topics:
-  <a ref="https://joannakl.github.io/cs102_f17/hwk/project1.pdf">**Project1**</a> - Review of Advanced Java & OOP
+  <a ref="https://joannakl.github.io/cs102_f17/hwk/project1.pdf">Project1</a> - Review of Advanced Java & OOP
   
       [project1](https://joannakl.github.io/cs102_f17/hwk/color_list.txt)
                  
